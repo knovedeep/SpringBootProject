@@ -1,0 +1,21 @@
+package com.techtalentsouth.techtalentblog2.blogpost;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+
+@Controller 
+public class BlogPostController {
+	
+
+	@GetMapping(path="/")
+	public String index(Model model) {
+			
+			model.addAttribute("razzledazzle"," hi there!");
+		return "blogpost/index";
+	}
+		
+	
+}
+

@@ -1,0 +1,14 @@
+package com.techtalentsouth.techtalentblog2.blogpost;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller 
+public class BlogPostController {
+
+		@RequestMapping("/")
+		public String index() {
+			return "blogpost/index";
+		}
+}
+

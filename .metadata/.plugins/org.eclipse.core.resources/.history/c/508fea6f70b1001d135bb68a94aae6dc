@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- We want to add support for thymeleaf which creates html tags
+  and properties --> 
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+   		<title>Edit a Blog</title>
+   		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   		<link th:href="@{/webjars/bootstrap/5.2.0/css/bootstrap.min.css}" rel="stylesheet"/>   	
+   		<link th:href="@{css/standard.css}" rel="stylesheet"/>	
+   </head>
+   <body>
+   		<div class="container">
+   			<h1>Editing Blog Post</h1>
+   			<form th:action="@{/blogposts/{id} (id=${blogPost.id})}" method="post" th:object="${blogPost}">
+					
+						<div class="form-group">
+							<input type="text" th:field="*{title}"
+								placeholder="Blog Title..." class="form-control"/>
+						</div>
+						<div class="form-group">
+							<input type="text" th:field="*{author}"
+								placeholder="Your Name Here..." class="form-control"/>
+						</div>
+						<div class="form-group">
+							<input type="text" th:field="*{blogEntry}"
+								placeholder="Blog Entry" class="form-control"/>
+						</div>
+						<button class="btn btn-primary" type="submit">Edit Your Post</button>
+					</form>	
+   		</div>
+   		<script th:src="@{/webjars/bootstrap/5.2.0/js/bootstrap.bundle.min.js}">			
+		</script>
+	
+   </body>
+</html>

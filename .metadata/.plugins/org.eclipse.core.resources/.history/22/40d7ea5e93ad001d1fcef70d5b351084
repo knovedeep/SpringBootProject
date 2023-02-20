@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymelead.org">
+  <head>
+    <title>Blog Site</title>
+    <meta http-equiv="Content-Type" content= "text/html; charset=UTF-8"/>
+  </head>
+  <body>
+    <h1>Welcome to our blog post site!</h1>
+	<h3>Check out our blogs!</h3>
+	<p> this value comes from our java code<span th:text="${razzledazzle}"></span></p>
+  </body>
+</html>

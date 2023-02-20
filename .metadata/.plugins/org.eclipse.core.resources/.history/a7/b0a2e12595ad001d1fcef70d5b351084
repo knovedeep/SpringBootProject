@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymelead.org">
+  <head>
+    <title>Blog Site</title>
+    <meta http-equiv="Content-Type" content= "text/html; charset=UTF-8"/>
+  </head>
+  <body>
+    <h1>Welcome to our blog post site!</h1>
+	<h3>Check out our blogs!</h3>
+	<p> Please use the form below to submit a Blog Post: <span th:text="${razzledazzle}"></span></p>
+	<form>
+		<table>
+			<tr>
+				<td>title</td>
+				<td><input type="text"/></td>
+			</tr>
+			<tr>
+				<td>Author</td>
+				<td><input type="text"/></td>
+			</tr>
+			<tr>
+				<td>Blog Entry</td>
+				<td><input type="text"/></td>
+			</tr>
+			<tr>
+				
+				<td><button type="submit"/>Submit Your Post</td>
+			</tr>
+			
+		</table>	
+	</form>
+  </body>
+</html>

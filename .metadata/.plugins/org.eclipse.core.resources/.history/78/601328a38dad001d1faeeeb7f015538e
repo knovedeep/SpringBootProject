@@ -1,0 +1,5 @@
+package com.techtalentsouth.techtalentblog2.blogpost;
+
+public class BlogPostController {
+
+}
